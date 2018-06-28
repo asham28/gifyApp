@@ -9,6 +9,8 @@
         crossorigin="anonymous">
     <!--Custome CSS-->
     <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer|Sorts+Mill+Goudy:400i" rel="stylesheet">
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,13 +20,20 @@
 <body>
     <div class="container">
         <div class="row">
+            <h2 class="col-10">GiphyApp Generator:<br> Black American Actress Edition</h2>
+        </div>
+        <div class="rows">
+            <p class="col-10">Click on the buttons below to show 10 gifs of black american actresses. Your fav not listed? No problem! Just
+                add their name using the search box below.</p>
+        </div>
+        <div class="row">
             <div id="btns"></div>
         </div>
         <div class="row">
             <form>
                 <div class="form-group">
                     <label for="inputText">Search</label>
-                    <input type="text" class="form-control" id="inputText" placeholder="e.g., solange">
+                    <input type="text" class="form-control" id="inputText"  placeholder="e.g., solange"><br>
                     <button type="submit" id='submit' class="btn btn-secondary">Submit</button>
                 </div>
             </form>

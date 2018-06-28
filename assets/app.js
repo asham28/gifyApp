@@ -5,8 +5,9 @@ $(document).ready(function () {
 
     // 2. CREATE A FUCTION TO MAKE THE BUTTONS 
     function createBtns() {
-
+        $("#btns").empty(); 
         for (var i = 0; i < topics.length; i++) {
+          
 
             var a = $("<button class='btn-info btn-small m-2 col-3'>");
             a.addClass("topics"); // limits 'scope' of document
@@ -41,13 +42,13 @@ $(document).ready(function () {
                 // B. FOR LOOP TO DISPLAY IMAGES: ADDING DATA ATTRIBUTES 
                 for (var i = 0; i < results.length; i++) {
 
-                    var gifDiv = $("<div class='col-6'>")
+                    var gifDiv = $("<div class='col-10 col-sm-2'>")
 
                     var rating = results[i].rating;
                     var animatedImageUrl = results[i].images.fixed_height.url;
                     var staticImageUrl = results[i].images.fixed_height_still.url;
-                    var p = $("<p class=' font-weight-bold '>").text("Rating: " + rating);
-                    var imageDisplay = $("<img class= ' flex-box rounded'>");
+                    var p = $("<p class='font-weight-bold '>").text("Rating: " + rating);
+                    var imageDisplay = $("<img class= 'rounded'>");
 
                     // For Still / Animated Gifs
                     imageDisplay.addClass("imageGiphy")

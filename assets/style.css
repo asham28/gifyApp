@@ -3,5 +3,14 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: fixed; 
+}
 
+h2 {
+    font-family: 'Sorts Mill Goudy', serif;
+    text-align: center; 
+}
+
+p {
+    text-align: center; 
+    font-family: 'IM Fell Great Primer', serif;
 }
