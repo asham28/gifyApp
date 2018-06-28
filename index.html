@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--BootStrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <!--Custome CSS-->
     <link rel="stylesheet" href="assets/style.css" type="text/css">
     <!--JQuery-->
@@ -12,14 +14,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    
-    <div id="btns"></div>
-    <div id="images"></div>
 
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="btns"></div>
+        </div>
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <label for="inputText">Search</label>
+                    <input type="text" class="form-control" id="inputText" placeholder="e.g., solange">
+                    <button type="submit" id='submit' class="btn btn-secondary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div id="images"></div>
+        </div>
+    </div>
 
     <!--JS File-->
     <script src="assets/app.js"></script>
 
 </body>
+
 </html>
