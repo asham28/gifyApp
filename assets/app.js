@@ -2,12 +2,12 @@ $(document).ready(function () {
 
     // 1.CREATE ARRAY OF STRINGS
     var topics = ["jada pinkett", "beyonce", "tiffany haddish", "viola davis", "kerry washington", "angela bassett", "zendaya", "gabrielle union", "tracee ellis ross"];
-
+    var limit=0;
     // 2. CREATE A FUCTION TO MAKE THE BUTTONS 
     function createBtns() {
-        $("#btns").empty(); 
+        $("#btns").empty();
         for (var i = 0; i < topics.length; i++) {
-          
+
 
             var a = $("<button class='btn-info btn-small m-2 col-3'>");
             a.addClass("topics"); // limits 'scope' of document
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
             var topic = $(this).attr("data-name"); //copying the data-name
             var apiKey = "SmyC6pLugsHSOmSjmIrnBRtwz8RW1opF";
-            var limit = 10;
+            limit = 10;
             var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + ".offset&api_key=" + apiKey + "&limit=" + limit;
 
             console.log(queryURL);
@@ -98,5 +98,11 @@ $(document).ready(function () {
         $("#inputText").val('');
         createBtns();
     });
+
+
+    $("#addMoreGifs").on("click", function () {
+        limit =+10; 
+    });
+
 
 });
